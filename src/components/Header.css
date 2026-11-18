@@ -1,0 +1,101 @@
+/* Header Component */
+header {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #263449;
+  border-bottom: 1px solid #344457;
+  /* padding: 16px 32px; */
+}
+
+img.react-logo {
+  width: 39px;
+}
+
+a.site-logo {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  /* border: 1px solid red; */
+}
+
+
+input.search-bar {
+    padding: 10px 16px;
+    width: 20%;
+    border: 1px solid #45566B;
+    border-radius: 50px;
+    background-color: #121820;
+    color: #F1F5F9;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+input.search-bar::placeholder {
+    color: #94A3B8;
+}
+
+input.search-bar:focus {
+    border-color: #A78BFA;
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.2);
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: #CBD5E1;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #7DD3FC;
+}
+
+
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    input.search-bar {
+        width: 80%;
+    }
+
+    nav {
+        /* border: 1px solid blue; */
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
+    nav ul {
+        /* width: 100%; */
+        /* border: 1px solid red; */
+        margin-top: 20px;
+        justify-content: space-around;
+    }
+}

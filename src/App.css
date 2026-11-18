@@ -1,0 +1,118 @@
+/* App.jsx */
+section.feeds-section {
+  width: 65%;
+  margin: 0 auto;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+
+h2.feeds-section-title {
+  color: #F1F5F9;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+div.sort-buttons-outer-container {
+  /* border: 1px solid yellow; */
+  width: 100%;
+  display: flex;
+  /* flex-direction: column;
+  align-items: start; */
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  align-self: flex-start;
+
+  flex-wrap: wrap;
+}
+
+
+div.sort-buttons-inner-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+div.sort-buttons-container,
+div.filter-buttons-container {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+button.sort-button,
+button.filter-button {
+  background-color: #1C2734;
+  color: #94A3B8;
+  border: 1px solid #344457;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+button.selected {
+  background-color: #A78BFA;
+  color: #121820;
+  border-color: #A78BFA;
+}
+
+
+div.post-list {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  section.feeds-section {
+    /* border: 1px solid red; */
+    width: 90%;
+  }
+
+  div.sort-buttons-outer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    /* border: 1px solid green; */
+    margin-top: -15px;
+    
+  }
+
+  div.sort-buttons-inner-container {
+    /* border: 1px solid green; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  div.filter-buttons-container {
+    /* border: 1px solid yellow; */
+    flex-wrap: wrap;
+  }
+
+  h2.feeds-section-title {
+    margin-bottom: 0px;
+  }
+}

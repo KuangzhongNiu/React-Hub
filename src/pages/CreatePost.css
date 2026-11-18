@@ -1,0 +1,149 @@
+/* Create Post Page */
+section.create-section {
+  /* border: 1px solid red; */
+  height: 100%;
+  padding-block: 30px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #526D85 transparent;
+  /* align-items: center; */
+}
+
+
+form.create-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #344457;
+  background-color: #202D3B;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+
+input.title-input,
+textarea.content-input,
+input.image-url-input,
+input.key-input,
+input.referenced-id-input,
+input.video-url-input {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #121820;
+  color: #F1F5F9;
+  border: 1px solid #45566B;
+  margin-bottom: 20px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+
+input.title-input::placeholder,
+textarea.content-input::placeholder,
+input.image-url-input::placeholder,
+input.key-input::placeholder,
+.referenced-id-input::placeholder,
+input.video-url-input::placeholder {
+  color: #94A3B8;
+}
+
+
+select.post-type {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    background-color: #121820;
+    color: #F1F5F9;
+    border: 1px solid #45566B;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+
+select.post-type:invalid {
+    color: #94A3B8;
+}
+
+
+select.post-type:valid {
+    color: #F1F5F9;
+}
+
+
+select.post-type option {
+    background-color: #1C2734;
+    color: #F1F5F9;
+}
+
+
+input.title-input:focus,
+textarea.content-input:focus,
+input.image-url-input:focus,
+input.key-input:focus,
+input.referenced-id-input:focus,
+select.post-type:focus,
+input.video-url-input:focus {
+  border-color: #A78BFA;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.15);
+}
+
+
+input.referenced-id-input.wrong {
+  border-color: #e05252;
+}
+
+
+input.referenced-id-input[readonly] {
+    background-color: #263449;
+    color: #94A3B8;
+    border-color: #344457;
+    cursor: not-allowed;
+}
+
+
+form.create-form label {
+  align-self: flex-start;
+  color: #E2E8F0;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+
+button.create-post {
+  background-color: #A78BFA;
+  color: #121820;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+button.create-post:disabled {
+  padding: 12px 20px;
+  background-color: #5B526F;
+  color: #B8B1C7;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    form.create-form {
+        width: 90%;
+    }
+}

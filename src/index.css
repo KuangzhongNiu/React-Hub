@@ -1,0 +1,68 @@
+*, *::before, *::after {
+   box-sizing: border-box;   
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: #121820;
+  color: #F1F5F9;
+}
+
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid green; */
+}
+
+
+/* Main */
+main {
+  /* border: 1px solid blue; */
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #526D85 transparent;
+}
+
+
+/* Status messages */
+p.status-message {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 20px;
+  align-self: center;
+}
+
+p.status-message-success {
+  color: #86EFAC;
+}
+
+p.status-message-error {
+  color: #FCA5A5;
+}
+
+
+
+/* Remove Arrows From Input Number */
+/* Reference: 
+https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp 
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
