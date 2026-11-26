@@ -9,6 +9,7 @@ section.feeds-section {
   justify-content: center;
   gap: 30px;
   padding-bottom: 30px;
+  max-width: 1000px;
 }
 
 
@@ -94,7 +95,8 @@ div.post-list {
   div.sort-buttons-outer-container {
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
+    /* gap: 5px; */
+    gap: 16px;
     /* border: 1px solid green; */
     margin-top: -15px;
     
@@ -105,6 +107,7 @@ div.post-list {
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
+    /* gap: 8px; */
   }
 
   div.filter-buttons-container {
@@ -113,6 +116,13 @@ div.post-list {
   }
 
   h2.feeds-section-title {
+    font-size: 24px;
     margin-bottom: 0px;
+  }
+
+  button.sort-button,
+  button.filter-button {
+    padding: 8px 12px;
+    font-size: 14px;
   }
 }

@@ -76,29 +76,30 @@ p.card-upvotes {
 
 /* Mobile devices */
 @media (max-width: 768px) {
-    a.post-link {
-        text-decoration: none;
-        width: 100%;
-        /* border: 1px solid green; */
-    }
 
-    article.post-card {
-        padding: 10px 12px;
-    }
+  a.post-link {
+    text-decoration: none;
+    width: 100%;
+    /* border: 1px solid green; */
+  }
 
-    h2.card-title {
-        font-size: 20px;
-    }
+  article.post-card {
+    padding: 10px 12px;
+  }
 
-    p.card-time {
-        font-size: 10px;
-    }
+  h2.card-title {
+    font-size: 20px;
+  }
 
-    p.type-post {
-        font-size: 10px;
-    }
+  p.card-time {
+    font-size: 10px;
+  }
 
-    p.card-upvotes {
-        font-size: 10px;
-    }
+  p.type-post {
+    font-size: 10px;
+  }
+
+  p.card-upvotes {
+    font-size: 10px;
+  }
 }

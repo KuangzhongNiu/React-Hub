@@ -67,3 +67,40 @@ a.original-post-button:hover {
   color: #C4B5FD;
   text-decoration: underline;
 }
+
+
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  section.referenced-post-section {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  p.referenced-post-section-label {
+    font-size: 11px;
+  }
+
+  h3.referenced-post-title {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  p.referenced-post-content {
+    font-size: 14px;
+  }
+
+  div.upvotes-comments-container {
+    font-size: 12px;
+  }
+
+  div.referenced-post-bottom-container {
+    gap: 10px;
+    padding-top: 10px;
+    /* border: 1px solid red; */
+  }
+
+  a.original-post-button {
+    font-size: 13px;
+  }
+} 

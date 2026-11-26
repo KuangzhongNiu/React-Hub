@@ -1,8 +1,11 @@
 import { NavLink, Link } from "react-router"
 import reactLogo from '../assets/react-logo.png'
 import './Header.css'
+import React from "react"
 
 export function Header(props) {
+
+    const [showMenu, setShowMenu] = React.useState(false)
 
     const activeStyles = {
         fontWeight: '600',
@@ -14,6 +17,12 @@ export function Header(props) {
     function searchPost(event) {
         const searchValue = event.currentTarget.value
         props.setSearchInput(searchValue)
+    }
+
+    function handleMenu() {
+        setShowMenu(function(prevState) {
+            return !prevState
+        })
     }
 
     return (
@@ -35,6 +44,14 @@ export function Header(props) {
                 placeholder="Search"
             />
 
+            <button 
+                className="menu-button"
+                onClick={handleMenu}
+            >
+                {showMenu ? 'x' : '☰'}
+            </button>
+
+            {showMenu && (
             <nav>
                 <ul>
                     <li>
@@ -58,6 +75,7 @@ export function Header(props) {
                     </li>
                 </ul>
             </nav>
+            )}
         </header>
     )
 }

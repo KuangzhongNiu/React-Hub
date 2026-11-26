@@ -456,30 +456,94 @@ button.confirm-button:hover {
 
 /* Mobile devices */
 @media (max-width: 768px) {
-    div.post-container {
-        width: 90%;
-    }
+  section.detail-section {
+    padding-block: 20px;
+  }
 
-    div.buttons-container {
-        /* border: 1px solid red; */
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-        justify-content: center;
-    }
 
-    div.upvotes-button-container {
-        flex-direction: column;
-        /* border: 1px solid green; */
-        gap: 5px;
-    }
+  div.post-container {
+    width: 90%;
+    padding: 15px;
+  }
 
-    p.upvotes-count {
-        margin: 0;
-        order: 0;
-    }
+  h2.post-title {
+    font-size: 24px;
+  }
 
-    button.upvote-button {
-        order: 1;
-    }
+  div.post-content-container {
+    width: 100%;
+  }
+
+  p.post-content {
+    font-size: 15px;
+  }
+
+  div.post-image-container {
+    width: 100%;
+  }
+
+  div.buttons-container {
+    /* border: 1px solid red; */
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.buttons-container button,
+  div.buttons-container a,
+  button.submit-comment-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  div.update-button-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  div.upvotes-button-container {
+    /* flex-direction: column; */
+    flex-direction: row;
+    /* border: 1px solid green; */
+    gap: 15px;
+  }
+
+  p.upvotes-count {
+    font-size: 13px;
+    margin: 0;
+    order: 1;
+  }
+
+  button.upvote-button {
+    order: 0;
+  }
+
+  div.comments-container {
+    /* border: 1px solid red; */
+    /* padding-inline: 12px; */
+    flex-wrap: wrap;
+  }
+
+  p.status-message {
+    text-align: center;
+  }
+
+  /* button.delete-comment {
+    display: inline;
+  } */
+
+  p.comment {
+    font-size: 14px;
+  }
+
+  form.comment-form label {
+    font-size: 15px;
+  }
+
+  dialog {
+    width: 90%;     
+    padding: 20px;
+  }
+
 }
