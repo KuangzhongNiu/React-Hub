@@ -78,8 +78,8 @@ nav li a:hover {
 
 /* Mobile devices */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
+    /* header {
+        flex-direction: row;
     }
 
     input.search-bar {
@@ -87,15 +87,56 @@ nav li a:hover {
     }
 
     nav {
-        /* border: 1px solid blue; */
         width: 80%;
         padding-bottom: 20px;
     }
 
     nav ul {
-        /* width: 100%; */
-        /* border: 1px solid red; */
         margin-top: 20px;
         justify-content: space-around;
+    } */
+
+  header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px 26px;
+    }
+
+    img.react-logo {
+      width: 35px;
+    }
+
+    h1 {
+      font-size: 23px;
+      margin: 0;
+    }
+
+
+    a.site-logo {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+        width: auto;
+        padding-bottom: 0;
+    }
+
+    nav ul {
+        margin-top: 0;
+        justify-content: flex-end;
+        gap: 16px;
+    }
+
+    nav li a {
+      font-size: 15px;
+    }
+
+    input.search-bar {
+        order: 3;
+        width: 100%;
+        font-size: 13px;
     }
 }
