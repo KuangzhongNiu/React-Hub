@@ -81,8 +81,17 @@ button.menu-button {
 
 
 
+
+
 /* Mobile devices */
 @media (max-width: 768px) {
+  .show-menu {
+    display: block;
+  }
+
+  .hide-menu {
+    display: none;
+  }
 
   header {
     /* flex-direction: row; */

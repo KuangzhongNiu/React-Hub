@@ -51,8 +51,8 @@ export function Header(props) {
                 {showMenu ? 'x' : '☰'}
             </button>
 
-            {showMenu && (
-            <nav>
+            
+            <nav className={`${showMenu ? 'show-menu' : 'hide-menu'}`}>
                 <ul>
                     <li>
                         <NavLink
@@ -75,7 +75,7 @@ export function Header(props) {
                     </li>
                 </ul>
             </nav>
-            )}
+            
         </header>
     )
 }
